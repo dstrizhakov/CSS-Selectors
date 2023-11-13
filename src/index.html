@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+        <title>CSS Dinner</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <main class="main">
+                <header class="main__header">
+                    <a href="index.html">
+                        <img src="img/favicon.png" alt="icon">
+                        <span>CSS Dinner</span> 
+                    </a>
+                </header>
+                <section class="main__game game">
+                    <h2 id="doThis">Select the plates</h2>
+                    <div class="game__help">
+                        <span id="helpTip"></span>
+                    </div>
+                    <div class="game__wrapper">
+                        <div class="table__wrapper">
+                            <div class="table__surface">
+                                <div id="table" class="table__main">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__edge">
+                            <div class="table__leg"></div>
+                            <div class="table__leg"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__code code">
+                    <div class="code__wrapper">
+                        <div class="code__css css">
+                            <div class="css__header">
+                                <h5>CSS Editor</h5>
+                                <h5>style.css</h5>
+                            </div>
+                            <div class="css__main">
+                                <div class="code__numbers">
+                                    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />21<br />22<br />23<br />24<br />25
+                                </div>
+                                <div id="css-field" class="css__field">
+                                    <div class="css__action">
+                                        <input
+                                            id="css-input"
+                                            class="css__input input-strobe"
+                                            type="text"
+                                            placeholder="Type in a CSS selector"
+                                        />
+                                        <button id="css-button" class="css__button">enter</button>
+                                    </div>
+                                    <p>&#123</p>
+                                    <p>/* Styles would go here. */</p>
+                                    <p>	&#125</p>
+                                    <br>
+                                    <p>/*</p>
+                                    <p>Type a number to skip to a level.</p>
+                                    <p>Ex → "5" for level 5</p>
+                                    <p>*/</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code__html html-code">
+                            <div class="html-code__header">
+                                <h5>HTML Viewer</h5>
+                                <h5>table.html</h5>
+                            </div>
+                            <div class="html-code__main">
+                                <div class="code__numbers">
+                                    1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />21<br />22<br />23<br />24<br />25
+                                </div>
+                                <div id="html-field" class="html-code__field">html</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="main__footer">
+                    <a href="https://github.com/dstrizhakov" target="_blank">
+                        <img src="img/github-icon.png" height="50px" alt="github logo" />
+                    </a>
+                    <h3>2023</h3>
+                    <a href="https://rs.school/js/" target="_blank">
+                        <img src="img/rs_school_js.svg" height="40px" alt="rsschool logo" />
+                    </a>
+                </footer>
+            </main>
+            <aside class="level">
+                <div class="level__header">
+                    <div class="level__level">
+                        <h2 id="level"></h2>
+                        <span id="level-checkmark" class="level__checkmark checkmark"></span>
+                    </div>
+                    <nav class="nav">
+                        <a href="#" class="nav__previous"></a>
+                        <a href="#" class="nav__next"></a>
+                    </nav>
+                    <div class="level__menu menu">
+                        <div class="menu__icon icon-menu"><span></span></div>
+                        <nav class="menu__body">
+                            <h2>Choose a level</h2>
+                            <ul class="menu__list">
+                                <!-- <li class="menu__item"><a href="#" class="menu__link"></a></li> -->
+                            </ul>
+                            <a href="#" class="reset-progress">Reset progress</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="level__progress">
+                    <div class="progress"></div>
+                </div>
+                <div class="level__help">
+                    <h3 class="level__selector"></h3>
+                    <h5 class="level__title"></h5>
+                    <h4 class="level__syntax"></h4>
+                    <div class="level__hint"></div>
+                    <div class="level__examples"></div>
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>
